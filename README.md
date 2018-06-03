@@ -1,1 +1,1 @@
-# MIT-Introduction-to-Python
+# MIT-Introduction-to-Computer-Science-and-Programming
