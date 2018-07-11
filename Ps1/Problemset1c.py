@@ -20,17 +20,14 @@ while True:
     
     current_savings = 0.0
     number_of_months = 0
-    while number_of_months <= 36:        
-        #print('current_savings: {}'.format(current_savings))
-        #print('number_of_months: {}'.format(number_of_months))
+    while number_of_months <= 36:       
         current_savings += monthly_savings + ((current_savings * annual_return) / 12)
         number_of_months += 1
             
         if number_of_months % 6 == 0:
             annual_salary += annual_salary * semi_annual_raise
             monthly_savings = (annual_salary / 12) * best_portion_saved            
-    
-    #print('current_savings: {}'.format(current_savings))
+   
     if abs(current_savings - down_payment) <= one_hundred_dollars_as_epsilon:
         break
     
